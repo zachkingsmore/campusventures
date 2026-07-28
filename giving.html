@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A welcoming community centered on faith, hope, and practical care.">
+    <title>Zach Kingsmore | Campus Ventures</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/giving.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+        <!-- Header -->
+    <header class="site-header">
+        <nav class="nav" aria-label="Main navigation">
+            <a class="brand" href="index.html#top">
+                <span class="brand-mark">ZK</span>
+                Zach Kingsmore
+            </a>
+            <div class="nav-links">
+                <a href="about.html">About CV</a>
+                <a href="giving.html">Giving</a>
+                <a href="newsletter.html">Newsletter</a>
+                <a href="prayer.html">Prayer</a>
+                <a class="nav-cta" href="mailto:zach.kingsmore@campusventures.org">Contact Me</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Page Content -->
+    <main id="top">
+        <section class="giving page-section" id="giving">
+            <div class="section-head">
+                <div>
+                    <div class="section-label">Giving</div>
+                    <h1>I can't do this without <strong><em>YOU.</em></strong></h1>
+                    <h2>Campus Ventures is a fully support-raised ministry. That means that we rely on God's provision and the generosity of people like you to support our mission.</h2>
+                    <p><em>"In the same way, the Lord has commanded that those who preach the gospel should receive their living from the gospel." <br>- 1 Corinthians 9:14<br></em></p>
+                    <div class="accent-rule"></div>
+                </div>
+                <a class="text-link" href="mailto:zach.kingsmore@campusventures.org">
+                    Ask a question
+                    <span aria-hidden="true">&#8594;</span>
+                </a>
+            </div>
+            <div class="giving-grid">
+                <a href="https://www.campusventures.org/donate/#donate" class="giving">
+                    <div class="giving-icon"><img src="/Users/zkings/code/PersonalWebsite/images/credit-card.png" alt="" style="width: 24px; height: 24px;"></div>
+                    <h3>Credit Card</h3>
+                    <p>Quick and easy way to give. Just click here, then select "Credit Card & ACH Donations" and fill out the form like any other online transaction.</p>
+                </a>
+                <a href="https://www.campusventures.org/eft-form-template/" class="giving">
+                    <div class="giving-icon"><img src="/Users/zkings/code/PersonalWebsite/images/bank.png" alt="" style="width: 24px; height: 24px;"></div>
+                    <h3>Electronic Funds Transfer (EFT)</h3>
+                    <p><em><strong>Preferred:</strong></em> Fast, secure, and convenient. Direct deposit from your bank account avoids complications if you change credit cards.</p>
+                </a>
+                <a href="#check-modal" class="giving" data-open-modal="checkModal">
+                    <div class="giving-icon"><img src="/Users/zkings/code/PersonalWebsite/images/paper.png" alt="" style="width: 24px; height: 24px;"></div>
+                    <h3>Check</h3>
+                    <p>Mail a check to our main office. Click for details.</p>
+                </a>
+                <a href="#needs-modal" class="giving" data-open-modal="needsModal">
+                    <div class="giving-icon"><img src="/Users/zkings/code/PersonalWebsite/images/" alt="" style="width: 24px; height: 24px;"></div>
+                    <h3>Ministry Needs/Wants</h3>
+                    <p>Want to support us in a more specific way? Check out our list of Ministry Needs/Wants!</p>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-inner">
+            <strong>Zach Kingsmore</strong>
+            <span>zach.kingsmore@campusventures.org · (719) 246-1138</span>
+            <div class="attribution-tooltip">
+                <span class="attribution-trigger">Attributions</span>
+                <div class="tooltip-content">
+                    <p>Icon Attributions:</p>
+                    <ul>
+                        <li><a href="https://www.flaticon.com/free-icons/credit-card" title="credit card icons">Credit card icons created by Stockio - Flaticon</a></li>
+                        <li><a href="https://www.flaticon.com/free-icons/bank" title="bank icons">Bank icons created by Magnific - Flaticon</a></li>
+                        <li><a href="https://www.flaticon.com/free-icons/checkbook" title="checkbook icons">Checkbook icons created by alimasykurm - Flaticon</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="checkModal" class="modal-overlay" onclick="closeModal(event)">
+        <div class="modal-card">
+            <button type="button" class="modal-close" data-close-modal>&times</button>
+            <h3>Donate by Check</h3>
+            <p>If you would like your donation to be designated for my ministry, please include a note with my name.</p>
+            <p>Please make checks payable to <strong>Campus Ventures</strong> or <strong>FCD</strong> and mail to:</p>
+            <p><strong>Campus Ventures<br>810 N. Main St. #299<br>Spearfish, SD 57783</strong></p>
+            <p>You will be mailed a receipt which will include a designation slip and an envelope you can use for any subsequest gifts.</p>
+            <p>Questions?</p>
+            <p>Call the office at (605) 722-4323 or email fcd@campusventures.org</p>
+        </div>
+    </div>
+    <div id="needsModal" class="modal-overlay" onclick="closeModal(event)">
+        <div class="modal-card">
+            <button type="button" class="modal-close" data-close-modal>&times</button>
+            <h3>Ministry Needs</h3>
+            
+        </div>
+    </div>
+</body>
+</html>

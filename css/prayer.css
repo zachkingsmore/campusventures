@@ -1,0 +1,141 @@
+.site-header { 
+    position: absolute;
+    z-index: 2; 
+    top: 0; 
+    width: 100%; 
+    padding: 26px clamp(24px, 6vw, 88px); 
+    background: var(--ink);
+}
+
+
+.prayer {
+  margin-top: 86px;
+  padding: 86px 24px 102px;
+  background: var(--paper);
+}
+
+.section-head {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.prayer-details {
+  display: grid;
+  align-items: top;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 50px;
+}
+
+.prayer .section-head > div:first-child,
+.prayer .section-head > div:last-child {
+  min-width: 0;
+}
+
+.prayer-form {
+  width: 100%;
+  max-width: 1120px;
+  min-width: 0;
+  margin-left: auto;
+}
+
+.prayer h2 { 
+  max-width: 470px;
+  margin-bottom: 18px;
+  font-size: clamp(2.25rem, 4vw, 3.7rem);
+}
+
+.prayer p {
+  margin: 0;
+  color: var(--ink);
+  font-size: 1.06rem;
+}
+
+.prayer p + p {
+  margin-top: 18px;
+}
+
+.prayer-request-box {
+  background: var(--paper);
+  border: 1px solid var(--pale);
+  border-radius: 4px;
+  padding: 10px;
+  max-width: 600px;
+  margin: 20px auto;
+  color: var(--ink);
+}
+
+.prayer-request-box h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.prayer-request-box p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--pale);
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--tan);
+  box-shadow: 0 0 5px var(--shadow);
+}
+
+.submit-btn {
+  background: var(--tan);
+  color: var(--ink);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 180ms ease, transform 180ms ease;
+}
+
+.submit-btn:hover {
+  background: var(--tan);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 700px) {
+  .prayer .section-head {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(24px, 4vw, 42px);
+  }
+
+  .prayer .section-head > div:last-child {
+    width: 100%;
+  }
+
+  .prayer-form {
+    max-width: 100%;
+  }
+}

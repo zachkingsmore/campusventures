@@ -1,0 +1,125 @@
+.site-header { 
+    position: absolute;
+    z-index: 2;
+    top: 0; 
+    width: 100%; 
+    padding: 26px clamp(24px, 6vw, 88px); 
+    background: var(--ink);
+}
+
+.newsletter {
+  margin-top: 86px;
+  background: var(--paper);
+}
+
+.section-head {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.newsletter-details {
+  display: grid;
+  align-items: top;
+  grid-template-columns: 1fr 1fr;
+  padding: 0;
+}
+
+.newsletter h2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.newsletter p {
+  margin: 0;
+  color: var(--ink);
+  font-size: .94rem;
+}
+
+.detail strong {
+  display: block;
+  max-width: 100px;
+  align-items: center;
+  margin-bottom: 4px;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.detail span {
+  color: var(--ink);
+}
+
+.newsletter-card {
+  position: relative;
+  display: flex;
+  min-height: 350px;
+  align-items: flex-end;
+  overflow: hidden;
+  padding: 0;
+  box-shadow: var(--shadow);
+}
+
+.newsletter-preview-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.newsletter-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(8, 8, 8, 0.57), rgba(10, 10, 10, 0.05));
+}
+
+.newsletter-embed-fallback {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1;
+  width: min(100%, 300px);
+  padding: 18px;
+  background: #e4ddd4db;
+  border: 1px solid rgba(9, 9, 9, 0.24);
+  border-radius: 4px;
+}
+
+.newsletter-embed-fallback .section-label {
+  margin-bottom: 8px;
+  color: var(--ink);
+}
+
+.newsletter-card p {
+  max-width: 270px;
+  margin: 0;
+  font-family: Fraunces, serif;
+  font-size: 1.8rem;
+  line-height: 1.2;
+}
+
+.newsletter-embed-button {
+  display: inline-flex;
+  margin-top: 14px;
+  padding: 10px 14px;
+  color: var(--ink);
+  background: var(--tan);
+  border-radius: 4px;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+@media (max-width: 700px) {
+  .intro, 
+  .newsletter {
+    grid-template-columns: 1fr;
+    padding: 75px 24px;
+  }
+
+  .newsletter-card {
+    min-height: 270px;
+  }
+}

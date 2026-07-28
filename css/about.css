@@ -43,7 +43,7 @@
     align-items: center;
     padding: 170px clamp(24px, 8vw, 120px) 92px;
     color: #fff;
-    background: linear-gradient(90deg, rgba(9, 9, 9, 0.88) 0%, rgba(64, 65, 65, 0.56) 47%, rgba(249, 249, 249, 0.12) 100%), url("/Users/zkings/code/PersonalWebsite/images/IMG_9990.JPG") center/cover;
+    background: linear-gradient(90deg, rgba(9, 9, 9, 0.88) 0%, rgba(64, 65, 65, 0.56) 47%, rgba(249, 249, 249, 0.12) 100%), url("images/IMG_9990.JPG") center/cover;
 }
 
 .intro h2 {
